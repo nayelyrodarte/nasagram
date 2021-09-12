@@ -1,8 +1,11 @@
 import "./App.css";
 import React, { useEffect, useState } from "react";
+import Post from "./Post";
 
 function App() {
   const [data, setData] = useState({});
+
+  console.log(data);
 
   useEffect(() => {
     fetch(
@@ -16,7 +19,7 @@ function App() {
     // }
   }, []);
 
-  return <div></div>;
+  return data?.map((item) => <Post />);
 }
 
 export default App;

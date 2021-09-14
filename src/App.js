@@ -19,7 +19,7 @@ function App() {
     // }
   }, []);
 
-  return data?.map((item) => <Post />);
+  return data?.map((item, index) => <Post key={`post-${index}`} />);
 }
 
 export default App;

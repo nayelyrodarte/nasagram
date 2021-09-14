@@ -3,9 +3,7 @@ import React, { useEffect, useState } from "react";
 import Post from "./Post";
 
 function App() {
-  const [data, setData] = useState({});
-
-  console.log(data);
+  const [data, setData] = useState([]);
 
   useEffect(() => {
     fetch(
@@ -19,7 +17,7 @@ function App() {
     // }
   }, []);
 
-  return data?.map((item, index) => <Post key={`post-${index}`} />);
+  return data?.map((item, index) => <Post data={item} key={`post-${index}`} />);
 }
 
 export default App;

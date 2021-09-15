@@ -4,6 +4,7 @@ import Post from "./Post";
 
 function App() {
   const [data, setData] = useState([]);
+  const [likes, setLikes] = useState([]);
 
   useEffect(() => {
     fetch(
@@ -17,7 +18,21 @@ function App() {
     // }
   }, []);
 
-  return data?.map((item, index) => <Post data={item} key={`post-${index}`} />);
+  useEffect(() => {
+    let getLikes = JSON.parse(sessionStorage.getItem("likes"));
+
+    if (getLikes) {
+      setLikes(getLikes);
+    }
+
+    if (!getLikes) {
+      sessionStorage.setItem("likes", JSON.stringify([]));
+    }
+  }, [data]);
+
+  return data?.map((item, index) => (
+    <Post data={item} likes={likes} key={`post-${index}`} />
+  ));
 }
 
 export default App;

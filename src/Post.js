@@ -18,10 +18,11 @@ function Post({ data, likes }) {
   const _manageLike = () => {
     if (like) {
       setLike(false);
-      // setLikesData(updatedLikes);
+      const index = likes.indexOf(identifier);
+      likes.splice(index, 1);
     }
 
-    if (!like) {
+    if (!like && !likes.includes(identifier)) {
       setLike(true);
       likes.push(identifier);
     }

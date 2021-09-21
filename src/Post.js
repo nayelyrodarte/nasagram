@@ -1,4 +1,8 @@
 import React, { useState, useEffect } from "react";
+import Img from "react-cool-img";
+
+//assets
+import loadingImage from "./assets/Spinner-1s-200px.svg";
 
 function Post({ data, likes }) {
   const [like, setLike] = useState(false);
@@ -33,7 +37,12 @@ function Post({ data, likes }) {
   return (
     <article className="post">
       <p>{date}</p>
-      <img src={url} alt={caption}></img>
+      <Img
+        placeholder={loadingImage}
+        alt="React Cool Img"
+        src={url}
+        alt={caption}
+      ></Img>
       <p>{caption}</p>
       <button
         className={`${like ? "like" : "unlike"}`}

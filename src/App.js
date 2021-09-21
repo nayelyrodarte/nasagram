@@ -51,6 +51,8 @@ function App() {
   return (
     <main>
       <h1>SPACESTAGRAM</h1>
+      <h3>featuring EPIC</h3>
+      <h3>(Earth Polychromatic Imaging Camera)</h3>
       <section className="feed">
         {data?.map((item, index) => (
           <Post
@@ -63,8 +65,10 @@ function App() {
       </section>
       <footer>
         <p>Made by Nayely Rodarte</p>
-        <p>for Shopify's Winter 2021 Front End Internship Challenge</p>
-        <p>nayelyrodarte.com</p>
+        <p>for Shopify's Front End Winter 2021 Internship Challenge</p>
+        <a href="http://www.nayelyrodarte.com" target="blank">
+          nayelyrodarte.com
+        </a>
       </footer>
     </main>
   );

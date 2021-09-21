@@ -132,23 +132,26 @@ h1 ~ h3:nth-of-type(2) {
   
   footer {
     font-family: "Bebas Neue";
-    font-size: 1.10em;
+    font-size: 1.20em;
     text-align: center;
+
+    background-color: black;
   
     width: 100%;
   
     padding: 1em 0;
     padding-bottom: 2em;
+    margin-top: 1em;
+
+    p:first-of-type {
+      margin-top: 1em;
+    }
+
   }
   
-  a {
-    color: white;
-    font-family: "Lato";
-
-    &:visited {
-        color: white;
-    }
-}
+  a, a:visited, a:hover, a:active {
+    color: inherit;
+  }
 
 @media (min-width: 784px) {
   .feed {

@@ -33,7 +33,8 @@ function Post({ data, likes }) {
   return (
     <article className="post">
       <p>{date}</p>
-      <img src={url} alt={caption} style={{ width: "5em" }}></img>
+      <img src={url} alt={caption}></img>
+      <p>{caption}</p>
       <button
         className={`${like ? "like" : "unlike"}`}
         onClick={(e) => _manageLike()}

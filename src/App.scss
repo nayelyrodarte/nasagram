@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:wght@400;700&display=swap");
 
 * {
   margin: 0;
@@ -6,36 +6,59 @@
 }
 
 body {
-    font-family: "Lato", sans-serif;
-    background: black;
-    color: white;
-    background: #23074d;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #cc5333, #23074d);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #cc5333, #23074d); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+  font-family: "Lato", sans-serif;
+  
+  background: black;
+  color: white;
+  background: #23074d; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #cc5333,
+    #23074d
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #cc5333,
+    #23074d
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 ::root {
   font-size: 16px;
 }
 
-h1 {
-    font-family: "Bebas Neue";
-  text-align: center;
-  padding-top: 1em;
+h1,
+h1 ~ h3 {
+  font-family: "Bebas Neue";
   font-size: 3em;
+  text-align: center;
+  
+  padding-top: 1em;
+}
+
+h1 ~ h3 {
+  font-weight: normal;
+  font-size: 2em;
+
+  padding-top: 0;
+}
+
+h1 ~ h3:nth-of-type(2) {
+    font-size: 1.5em;
 }
 
 .post {
-  background-color: black;
   max-width: 100%;
+
+  background-color: black;
   color: white;
-  margin-bottom: 1.5em;
-  font-size: 1rem;
+  box-shadow: -1px 4px 10px -4px rgba(0, 0, 0, 0.75);
   border-radius: 4px;
+
+  margin-bottom: 1.5em;
   padding: 1em;
-  opacity: 1;
-  box-shadow: -1px 4px 10px -4px rgba(0,0,0,0.75);
+
+  font-size: 1rem;
 
   img {
     width: 100%;
@@ -44,26 +67,29 @@ h1 {
   button {
     color: white;
     background-color: black;
+
     border: solid 1px gray;
-      font-weight: bold;
-      font-family: "Bebas Neue";
-      letter-spacing: 1px;
-      font-size: 1em;
-      border-radius: 4px;
-    margin: 0.5em 1em;
-    padding: 0.5em 1em;
-    cursor: pointer;
+    border-radius: 4px;
+
+    font-weight: bold;
+    font-family: "Bebas Neue";
+    letter-spacing: 1px;
+    font-size: 1em;
 
     width: fit-content;
 
+    margin: 0.5em 1em;
+    padding: 0.5em 1em;
+    
+    cursor: pointer;
+
     span {
-        margin-right: 0.5em;
+      margin-right: 0.5em;
     }
 
     &:hover {
-        transform: scale(1.1);
+      transform: scale(1.1);
     }
-
   }
 
   p {
@@ -74,6 +100,7 @@ h1 {
   p:first-of-type {
     text-align: right;
     font-size: 0.75em;
+
     padding-right: 0.5em;
     padding-bottom: 0.5em;
   }
@@ -88,12 +115,39 @@ h1 {
     color: white;
     border-color: #390099;
   }
-
 }
 
 .feed {
-    padding: 2em;
-    padding-bottom: 0;
+  padding: 2em;
+  padding-bottom: 0;
+}
+
+.loader {
+    position: absolute;
+    inset: 0;
+    margin: auto;
+  
+    text-align: center;
+  }
+  
+  footer {
+    font-family: "Bebas Neue";
+    font-size: 1.10em;
+    text-align: center;
+  
+    width: 100%;
+  
+    padding: 1em 0;
+    padding-bottom: 2em;
+  }
+  
+  a {
+    color: white;
+    font-family: "Lato";
+
+    &:visited {
+        color: white;
+    }
 }
 
 @media (min-width: 784px) {
@@ -104,13 +158,13 @@ h1 {
     align-items: center;
 
     width: 80%;
-    
-    margin: auto;
 
+    margin: auto;
   }
 
   .post {
     margin: 1em;
+
     width: 15em;
     height: fit-content;
 
@@ -130,16 +184,3 @@ h1 {
     }
   }
 }
-
-.loader {
-    position: absolute;
-    inset: 0;
-    margin: auto;
-    text-align: center
-}
-
-  footer {
-      width: 100%;
-      text-align: center;
-      padding: 1em 0;
-  }

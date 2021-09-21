@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:wght@400;700&display=swap");
 * {
   margin: 0;
@@ -20,23 +21,33 @@ body {
   font-size: 16px;
 }
 
-h1 {
+h1,
+h1 ~ h3 {
   font-family: "Bebas Neue";
+  font-size: 3em;
   text-align: center;
   padding-top: 1em;
-  font-size: 3em;
+}
+
+h1 ~ h3 {
+  font-weight: normal;
+  font-size: 2em;
+  padding-top: 0;
+}
+
+h1 ~ h3:nth-of-type(2) {
+  font-size: 1.5em;
 }
 
 .post {
-  background-color: black;
   max-width: 100%;
+  background-color: black;
   color: white;
-  margin-bottom: 1.5em;
-  font-size: 1rem;
-  border-radius: 4px;
-  padding: 1em;
-  opacity: 1;
   box-shadow: -1px 4px 10px -4px rgba(0, 0, 0, 0.75);
+  border-radius: 4px;
+  margin-bottom: 1.5em;
+  padding: 1em;
+  font-size: 1rem;
 }
 .post img {
   width: 100%;
@@ -45,15 +56,15 @@ h1 {
   color: white;
   background-color: black;
   border: solid 1px gray;
+  border-radius: 4px;
   font-weight: bold;
   font-family: "Bebas Neue";
   letter-spacing: 1px;
   font-size: 1em;
-  border-radius: 4px;
+  width: fit-content;
   margin: 0.5em 1em;
   padding: 0.5em 1em;
   cursor: pointer;
-  width: fit-content;
 }
 .post button span {
   margin-right: 0.5em;
@@ -84,6 +95,30 @@ h1 {
   padding-bottom: 0;
 }
 
+.loader {
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  text-align: center;
+}
+
+footer {
+  font-family: "Bebas Neue";
+  font-size: 1.1em;
+  text-align: center;
+  width: 100%;
+  padding: 1em 0;
+  padding-bottom: 2em;
+}
+
+a  {
+  color: white;
+  font-family: "Lato";
+}
+a :visited {
+  color: white;
+}
+
 @media (min-width: 784px) {
   .feed {
     display: flex;
@@ -109,18 +144,6 @@ h1 {
   .post button {
     margin-left: 0;
   }
-}
-.loader {
-  position: absolute;
-  inset: 0;
-  margin: auto;
-  text-align: center;
-}
-
-footer {
-  width: 100%;
-  text-align: center;
-  padding: 1em 0;
 }
 
 /*# sourceMappingURL=App.css.map */

@@ -1,9 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:wght@400;700&display=swap');
+
 * {
   margin: 0;
   padding: 0;
 }
 
 body {
+    font-family: "Lato", sans-serif;
     background: black;
     color: white;
     background: #23074d;  /* fallback for old browsers */
@@ -17,8 +20,10 @@ background: linear-gradient(to right, #cc5333, #23074d); /* W3C, IE 10+/ Edge, F
 }
 
 h1 {
+    font-family: "Bebas Neue";
   text-align: center;
-  padding: 1em;
+  padding-top: 1em;
+  font-size: 3em;
 }
 
 .post {
@@ -40,6 +45,9 @@ h1 {
       background-color: #390099;
       color: white;
       font-weight: bold;
+      font-family: "Bebas Neue";
+      letter-spacing: 1px;
+      font-size: 1em;
       border: none;
       border-radius: 4px;
     margin: 0.5em 1em;

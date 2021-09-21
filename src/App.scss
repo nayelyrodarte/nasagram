@@ -46,6 +46,42 @@ h1 ~ h3:nth-of-type(2) {
     font-size: 1.5rem;
 }
 
+button {
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.15em;
+
+  color: white;
+  background-color: black;
+
+  border: solid 1px gray;
+  border-radius: 4px;
+
+  font-weight: bold;
+  font-family: "Bebas Neue";
+  letter-spacing: 1px;
+  font-size: 1rem;
+
+  width: fit-content;
+
+  margin: 0.5em 1em;
+  padding: 0.5em 1.5em;
+  
+  cursor: pointer;
+
+  div {
+    margin-left: -0.15em;
+    margin-right: 0.10em;
+    align-self: flex-start;
+  }
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
 .post {
   max-width: 100%;
 
@@ -63,41 +99,7 @@ h1 ~ h3:nth-of-type(2) {
     width: 100%;
   }
 
-  button {
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0.15em;
-
-    color: white;
-    background-color: black;
-
-    border: solid 1px gray;
-    border-radius: 4px;
-
-    font-weight: bold;
-    font-family: "Bebas Neue";
-    letter-spacing: 1px;
-    font-size: 1rem;
-
-    width: fit-content;
-
-    margin: 0.5em 1em;
-    padding: 0.5em 1.5em;
-    
-    cursor: pointer;
-
-    div {
-      margin-left: -0.15em;
-      margin-right: 0.10em;
-      align-self: flex-start;
-    }
-
-    &:hover {
-      transform: scale(1.1);
-    }
-  }
+  
 
   p {
     padding: 0 1em;
@@ -154,6 +156,11 @@ h1 ~ h3:nth-of-type(2) {
       margin-top: 1em;
     }
 
+    button {
+      margin: auto;
+      margin-top: 1em;
+    }
+
   }
   
   a, a:visited, a:hover, a:active {
@@ -193,6 +200,7 @@ h1 ~ h3:nth-of-type(2) {
       margin-left: 0;
     }
   }
+
 }
 
 .undo-turn {

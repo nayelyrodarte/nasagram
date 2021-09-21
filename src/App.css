@@ -37,20 +37,7 @@ h1 ~ h3:nth-of-type(2) {
   font-size: 1.5rem;
 }
 
-.post {
-  max-width: 100%;
-  background-color: black;
-  color: white;
-  box-shadow: -1px 4px 10px -4px rgba(0, 0, 0, 0.75);
-  border-radius: 4px;
-  margin-bottom: 1.5em;
-  padding: 1em;
-  font-size: 1rem;
-}
-.post img {
-  width: 100%;
-}
-.post button {
+button {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -68,13 +55,27 @@ h1 ~ h3:nth-of-type(2) {
   padding: 0.5em 1.5em;
   cursor: pointer;
 }
-.post button div {
+button div {
   margin-left: -0.15em;
   margin-right: 0.1em;
   align-self: flex-start;
 }
-.post button:hover {
+button:hover {
   transform: scale(1.1);
+}
+
+.post {
+  max-width: 100%;
+  background-color: black;
+  color: white;
+  box-shadow: -1px 4px 10px -4px rgba(0, 0, 0, 0.75);
+  border-radius: 4px;
+  margin-bottom: 1.5em;
+  padding: 1em;
+  font-size: 1rem;
+}
+.post img {
+  width: 100%;
 }
 .post p {
   padding: 0 1em;
@@ -117,6 +118,10 @@ footer {
   margin-top: 1em;
 }
 footer p:first-of-type {
+  margin-top: 1em;
+}
+footer button {
+  margin: auto;
   margin-top: 1em;
 }
 

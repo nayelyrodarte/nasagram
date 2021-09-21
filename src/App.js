@@ -69,6 +69,17 @@ function App() {
         <a href="http://www.nayelyrodarte.com" target="blank">
           nayelyrodarte.com
         </a>
+        <button
+          onClick={(e) =>
+            window.scroll({
+              top: 0,
+              left: 0,
+              behavior: "smooth",
+            })
+          }
+        >
+          Back to top ↑
+        </button>
       </footer>
     </main>
   );

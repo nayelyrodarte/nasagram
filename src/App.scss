@@ -8,7 +8,6 @@
 body {
   font-family: "Lato", sans-serif;
   
-  background: black;
   color: white;
   background: #23074d; /* fallback for old browsers */
   background: -webkit-linear-gradient(
@@ -30,7 +29,7 @@ body {
 h1,
 h1 ~ h3 {
   font-family: "Bebas Neue";
-  font-size: 3em;
+  font-size: 3rem;
   text-align: center;
   
   padding-top: 1em;
@@ -38,13 +37,13 @@ h1 ~ h3 {
 
 h1 ~ h3 {
   font-weight: normal;
-  font-size: 2em;
+  font-size: 2rem;
 
   padding-top: 0;
 }
 
 h1 ~ h3:nth-of-type(2) {
-    font-size: 1.5em;
+    font-size: 1.5rem;
 }
 
 .post {
@@ -74,12 +73,12 @@ h1 ~ h3:nth-of-type(2) {
     font-weight: bold;
     font-family: "Bebas Neue";
     letter-spacing: 1px;
-    font-size: 1em;
+    font-size: 1rem;
 
     width: fit-content;
 
     margin: 0.5em 1em;
-    padding: 0.5em 1em;
+    padding: 0.5em 1.85em;
     
     cursor: pointer;
 
@@ -99,7 +98,7 @@ h1 ~ h3:nth-of-type(2) {
   //date
   p:first-of-type {
     text-align: right;
-    font-size: 0.75em;
+    font-size: 0.80rem;
 
     padding-right: 0.5em;
     padding-bottom: 0.5em;
@@ -107,7 +106,7 @@ h1 ~ h3:nth-of-type(2) {
 
   //caption
   p:nth-of-type(2) {
-    padding: 0.5rem 1em;
+    padding: 0.5em 1em;
   }
 
   .like {
@@ -132,7 +131,7 @@ h1 ~ h3:nth-of-type(2) {
   
   footer {
     font-family: "Bebas Neue";
-    font-size: 1.20em;
+    font-size: 1.20rem;
     text-align: center;
 
     background-color: black;

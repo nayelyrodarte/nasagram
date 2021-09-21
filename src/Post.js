@@ -18,7 +18,6 @@ function Post({ data, likes }) {
   let dateQuery = date.replaceAll("-", "/").slice(0, 10);
   let url = `https://epic.gsfc.nasa.gov/archive/natural/${dateQuery}/png/${image}.png`;
 
-  // TODO; Manage unlike
   const _manageLike = () => {
     if (like) {
       setLike(false);
@@ -37,15 +36,10 @@ function Post({ data, likes }) {
   return (
     <article className="post">
       <p>{date}</p>
-      <Img
-        placeholder={loadingImage}
-        alt="React Cool Img"
-        src={url}
-        alt={caption}
-      ></Img>
+      <Img placeholder={loadingImage} src={url} alt={caption}></Img>
       <p>{caption}</p>
       <button
-        className={`${like ? "like" : "unlike"}`}
+        className={`${like ? "like" : ""}`}
         onClick={(e) => _manageLike()}
       >
         Like

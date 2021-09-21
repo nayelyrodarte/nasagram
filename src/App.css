@@ -81,6 +81,7 @@ h1 {
 
 .feed {
   padding: 2em;
+  padding-bottom: 0;
 }
 
 @media (min-width: 784px) {
@@ -119,7 +120,7 @@ h1 {
 footer {
   width: 100%;
   text-align: center;
-  padding: 2em 0;
+  padding: 1em 0;
 }
 
 /*# sourceMappingURL=App.css.map */

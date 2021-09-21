@@ -50,7 +50,7 @@ function App() {
 
   return (
     <main>
-      <h1>NASAgram</h1>
+      <h1>SPACESTAGRAM</h1>
       <section className="feed">
         {data?.map((item, index) => (
           <Post

@@ -30,9 +30,16 @@ function App() {
     }
   }, [data]);
 
-  return data?.map((item, index) => (
-    <Post data={item} likes={likes} key={`post-${index}`} />
-  ));
+  return (
+    <main>
+      <h1>NASAgram</h1>
+      <section className="feed">
+        {data?.map((item, index) => (
+          <Post data={item} likes={likes} key={`post-${index}`} />
+        ))}
+      </section>
+    </main>
+  );
 }
 
 export default App;

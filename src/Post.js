@@ -42,6 +42,7 @@ function Post({ data, likes }) {
         className={`${like ? "like" : ""}`}
         onClick={(e) => _manageLike()}
       >
+        <div className={`${like ? "turn" : "undo-turn"}`}>🚀</div>
         Like
       </button>
     </article>

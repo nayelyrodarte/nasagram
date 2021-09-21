@@ -51,6 +51,10 @@ h1 ~ h3:nth-of-type(2) {
   width: 100%;
 }
 .post button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.15em;
   color: white;
   background-color: black;
   border: solid 1px gray;
@@ -61,11 +65,13 @@ h1 ~ h3:nth-of-type(2) {
   font-size: 1rem;
   width: fit-content;
   margin: 0.5em 1em;
-  padding: 0.5em 1.85em;
+  padding: 0.5em 1.5em;
   cursor: pointer;
 }
-.post button span {
-  margin-right: 0.5em;
+.post button div {
+  margin-left: -0.15em;
+  margin-right: 0.1em;
+  align-self: flex-start;
 }
 .post button:hover {
   transform: scale(1.1);
@@ -142,6 +148,34 @@ a, a:visited, a:hover, a:active {
   }
   .post button {
     margin-left: 0;
+  }
+}
+.undo-turn {
+  animation-name: turn-outside;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+
+.turn {
+  animation-name: turn-inside;
+  animation-duration: 0.3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes turn-outside {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-180deg);
+  }
+}
+@keyframes turn-inside {
+  from {
+    transform: rotate(-180deg);
+  }
+  to {
+    transform: rotate(0deg);
   }
 }
 

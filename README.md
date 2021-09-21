@@ -7,6 +7,6 @@ To see the app in production, [click here](https://nasagram-nayelyrodarte.vercel
 # Installation 
 
 1. Fork or clone this repository.
-2. Run `<yarn install>` to set up the project's dependencies.
-3. Run `<yarn start>` and preview the proyect in local eviroment. 
+2. Run `yarn install` to set up the project's dependencies.
+3. Run `yarn start` and preview the proyect in local eviroment. 
 

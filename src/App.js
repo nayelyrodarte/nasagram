@@ -2,6 +2,9 @@ import "./App.css";
 import React, { useEffect, useState } from "react";
 import Post from "./Post";
 
+//assets
+import loadingImage from "./assets/spinner.svg";
+
 function App() {
   const [data, setData] = useState([]);
   const [likes, setLikes] = useState([]);
@@ -38,7 +41,11 @@ function App() {
   }, [data]);
 
   if (loading) {
-    return "Loading";
+    return (
+      <main>
+        <img className="loader" alt="loader" src={loadingImage} />;
+      </main>
+    );
   }
 
   return (

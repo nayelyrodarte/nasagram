@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import Img from "react-cool-img";
 
 //assets
-import loadingImage from "./assets/Spinner-1s-200px.svg";
+import loadingImage from "./assets/spinner.svg";
 
 function Post({ data, likes }) {
   const [like, setLike] = useState(false);
